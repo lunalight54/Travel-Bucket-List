@@ -1,0 +1,33 @@
+/*try {
+    await client.connect();
+    console.log('Connected to MongoDB');
+
+    const database = client.db('country_bucket_list');
+    const collection = database.collection('users');
+
+    const user = await collection.findOne({ username: username, password: password });
+
+    if (user) {
+      console.log('Login successful');
+      // Perform further actions after successful login
+      if (user.countries && user.countries.length > 0) {
+        console.log("There are countries!");
+        
+      }
+      else{
+        console.log("no countries");
+      }
+      return user._id.toString();
+    } else {
+      console.log('Invalid  credentials');
+      // Handle invalid credentials case
+
+      return null;
+    }
+  } catch (error) {
+    console.error('Error connecting to MongoDB:', error);
+    throw error;
+  } finally {
+    await client.close();
+    //....
+  }*/
